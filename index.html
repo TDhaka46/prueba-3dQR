@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Visor 3D con A-Frame</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+    <body>
+        <a-scene>
+        <!-- Cargar el modelo 3D -->
+        <a-assets>
+            <a-asset-item id="modelo-3d" src="2022_toyota_hilux.glb"></a-asset-item>
+        </a-assets>
+    
+        <!-- Insertar el modelo 3D en la escena -->
+        <a-entity gltf-model="#modelo-3d" position="0 1.6 -2" scale="1 1 1"></a-entity>
+
+        <!-- Fondo de la escena -->
+        <a-sky color="#ECECEC"></a-sky>
+        </a-scene>
+    </body>
+</html>
